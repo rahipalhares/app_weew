@@ -1,0 +1,86 @@
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  /* disable webkit tap highlight */
+  overflow-x: hidden;
+}
+
+/* Lists */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container {
+  position: relative;
+  padding-top: 69px;    
+  padding-bottom: 0px;
+}
+#containerb {
+  position: relative;
+  padding-top: 119px;    
+  padding-bottom: 0px;
+}
+
+/* Menu Button */
+.menu-btn {
+  width: 40px;
+  padding: 0px;
+  /*margin-bottom: 30px;*/
+  background: #fff;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position:relative;
+}
+.menu-btn img {
+  margin-top: 12px;
+  height: 16px;
+}
+.menu-btn:hover img {
+  filter: brightness(0.2);
+}
+
+/* Voltar Button */
+.menu-btnv {
+  width: 40px;
+  padding: 0px;
+  /*margin-bottom: 30px;*/
+  background: #fff;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position:relative;
+}
+.menu-btnv img {
+  margin-top: 8px;
+}
+.menu-btnv:hover img {
+  filter: brightness(0.2);
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  background: #fff;
+  color: #999999;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  z-index: 9998;
+}
+
+/* Footer */
+.site-footer {
+    position: fixed;
+    background: #BCB6A3;
+    color: #fff;
+    width: 100%;
+    padding: 12.5px 0px 12.5px 0px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0);
+    text-align: center;
+    z-index: 9997;
+    display: flex;
+}
+
+/*# sourceMappingURL=demo.css.map */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">
+		<script>
+			function player() {
+				var pagina = document.getElementById("frame-topo");
+				var player = document.getElementById("frame-player");
+				if(pagina&&player){
+					var paginabar = pagina.contentWindow.document.getElementById("player-bar");
+					var paginaarquivo = pagina.contentWindow.document.getElementById("player-arquivo");
+					var playerbar = player.contentWindow.document.getElementById("player-bar");
+					var playeraudio = player.contentWindow.document.getElementById("player-audio");
+					if(document.getElementById("frameset").getAttribute("rows")=="*,0"){var barra = 0;}else{var barra = 1;}
+					if(paginabar){
+						if(paginabar.value=="X"){
+							paginabar.value = barra;
+						}
+					}
+					if((paginabar.value==0||playerbar.value==0)&&barra==1){
+						document.getElementById("frameset").setAttribute("rows", "*,0");
+						playerbar.value = 0;
+						paginabar.value = 0;
+					}else if((paginabar.value==1||playerbar.value==1)&&barra==0){
+						document.getElementById("frameset").setAttribute("rows", "*,70");
+						playerbar.value = 1;
+						paginabar.value = 1;
+					}
+					if(paginaarquivo){
+						if(playeraudio.src!=paginaarquivo.value&&paginaarquivo.value){
+							playeraudio.src = paginaarquivo.value;
+						}
+					}
+				}
+			}
+			window.setInterval(player, 500);
+		</script>
+	</head>
+	<frameset id="frameset" rows="*,0" frameborder="NO" border="0" framespacing="0" cols="*">
+  		<frame id="frame-topo" src="inicio.html" name="mainFrame" class="bg">
+  		<frame id="frame-player" src="player.html" name="bottomFrame" scrolling="NO" noresize >
+	</frameset>
+	<noframes>
+		<body>
+		</body>
+	</noframes>
+</html>

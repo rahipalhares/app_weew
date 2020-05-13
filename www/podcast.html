@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnv" class="menu-btnv">
+                    <img src="imagens/svg/awesome-chevron-circle-left.svg"/>
+                </div>
+            </div>
+            <div class="logocab">
+                <div id="seguidorestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-user.svg"/>
+                </div>
+                <div id="mensagenstopo" class="icon-menu">
+                    <img src="imagens/svg/feather-message-circle.svg"/>
+                </div>
+                <div id="notificacoestopo" class="icon-menu">
+                    <img src="imagens/svg/ionic-ios-notifications.svg"/>
+                </div>
+                <div id="destaquestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-star.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Podcasts</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+        
+        <div id="container">
+            <div id="podcast" class="maininicio2 flex-column">
+                <div class="card">
+                    <div class="d-flex flex-h pb-10 bb">
+                        <div id="canal" class="mr-10 mxw-100">
+                            <img id="canal-img" src="imagens/svg/avatar-branco.svg" class="mxh-100" height="100" width="100"/>
+                        </div>
+                        <div id="canal-dados"></div>
+                    </div>
+                    <div class="d-flex flex-h mt-10">
+                        <div id="canal-salvar" class="textcenter c3 br"><img class="mr-10" src="imagens/svg/metro-floppy-disk.svg"/><span>Salvar</span></div>
+                        <div id="canal-compartilhar" class="textcenter c3 br"><img class="mr-10 sc-14" src="imagens/svg/awesome-share-square.svg"/><span>Compartilhar</span></div>
+                        <div id="canal-votar" class="textcenter c3"><img class="mr-10" src="imagens/svg/feather-star2.svg"/><span>Avaliar</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="d-flex flex-h mb-10">Playlist</div>
+                    <div id="podcast-list"></div>
+                </div>
+            </div>          
+        </div>
+        <div id="player" class="player d-none flex-h p-10">
+            <audio id="player-audio" src="podcasts/player.mp3" preload="auto"></audio>
+            <button id="play">
+                <img src="imagens/svg/awesome-play.svg"/>
+            </button>
+            <button id="pause" class="d-none">
+                <img src="imagens/svg/pause.svg"/>
+            </button>
+            <div class="ml-10 no-overflow pt-7">
+                <div id="player-titulo" class="fs-08 c6"></div>
+                <div id="player-autor" class="fs-07 c6"></div>
+            </div>
+            <div class="progressoc p-10">
+                <div class="progresso b-white brs-20px">
+                    <div id="player-carregado" class="b6 brs-20px" style="width:0%"></div>
+                    <div id="player-progresso" class="b4 brs-20px bar" style="width:0%"></div>
+                </div>
+            </div>
+            <button id="fechar">
+                <img src="imagens/svg/cancel.svg"/>
+            </button>
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/acao.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>loadpodcast();</script>
+    <input type="hidden" id="player-bar" value="X"/>
+    <input type="hidden" id="player-arquivo"/>
+    </body>
+</html>

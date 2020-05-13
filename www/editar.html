@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnv" class="menu-btnv">
+                    <img src="imagens/svg/awesome-chevron-circle-left.svg"/>
+                </div>
+            </div>
+            <div class="logocab">
+                <div id="seguidorestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-user.svg"/>
+                </div>
+                <div id="mensagenstopo" class="icon-menu">
+                    <img src="imagens/svg/feather-message-circle.svg"/>
+                </div>
+                <div id="notificacoestopo" class="icon-menu">
+                    <img src="imagens/svg/ionic-ios-notifications.svg"/>
+                </div>
+                <div id="destaquestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-star.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Edição de Perfil</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+
+        <div id="container">
+            <div id="perfil" class="maininicio2 flex-column pb-10">
+                <div class="card">
+                    <div id="perfil-list">
+                        <div id="editarcapa-atual">
+                            <span>Foto de capa</span>
+                            <div id="editarcapa-btn" class="f-right">
+                                <img src="imagens/svg/feather-edit.svg">
+                                <span class="c5 fs-08">Editar</span>
+                            </div>
+                            <div  id="fotocapa-img" class="editarcapa"></div>
+                        </div>
+                        <div id="editarcapa-editar" class="d-none">
+                            <span>Enviar nova capa</span>
+                            <div id="cancelarcapa-btn" class="f-right">
+                                <img src="imagens/svg/cancel2.svg">
+                                <span class="c5 fs-08">Cancelar</span>
+                            </div>
+                            <div id="editarcapa-uploads" class="d-flex flex-h">
+                                <div class="upload-btn-wrapper c3 b8 mnh-100 h-225">
+                                    <div class="textcenter middle50">
+                                        <img src="imagens/svg/feather-upload-cloud.svg"/><br><span class="fs-08">Upload de Foto</span><br><span class="fs-07">(tamanho ideal 400x225px)</span>
+                                    </div>
+                                    <input type="file" id="editarcapa-foto" name="foto" accept="image/*"/>
+                                </div>
+                            </div>
+                            <span id="editarcapa-arquivo" class="d-none c5 mt-10 text-center"></span>
+                            <div id="editarcapa-deletar" class="d-none center mt-10" onclick="">
+                                <img src='imagens/svg/cancel-cinza.svg' class="mr-10"/><span class='c4 fs-06 lh-24'>Eliminar arquivo</span>
+                            </div>
+                            <div id="editarcapa-barra" class="d-none upload-barra mt-10">
+                                <div id="editarcapa-progresso" class="upload-progresso"></div>
+                            </div>
+                        </div>
+                        <div id="editarperfil-atual" class="bt mt-20 pt-10">
+                            <span>Foto de perfil</span>
+                            <div id="editarperfil-btn" class="f-right">
+                                <img src="imagens/svg/feather-edit.svg">
+                                <span class="c5 fs-08">Editar</span>
+                            </div>
+                            <div  id="fotoperfil" class="center editarperfil mxw-40p brs-50">
+                                <img id="fotoperfil-img" src="imagens/svg/avatar-branco.svg" class="brs-50" height="auto" width="100%">
+                            </div>
+                        </div>
+                        <div id="editarperfil-editar" class="bt mt-20 pt-10 d-none">
+                            <span>Enviar nova foto de perfil</span>
+                            <div id="cancelarperfil-btn" class="f-right">
+                                <img src="imagens/svg/cancel2.svg">
+                                <span class="c5 fs-08">Cancelar</span>
+                            </div>
+                            <div id="editarperfil-uploads" class="d-flex flex-h">
+                                <div class="upload-btn-wrapper c3 b8 mnh-100 mnh-40w">
+                                    <div class="textcenter middle5050">
+                                        <img src="imagens/svg/feather-upload-cloud.svg"/><br><span class="fs-08">Upload de Foto</span><br><span class="fs-07">(tamanho ideal 100x100px)</span>
+                                    </div>
+                                    <input type="file" id="editarperfil-foto" name="foto" accept="image/*"/>
+                                </div>
+                            </div>
+                            <span id="editarperfil-arquivo" class="d-none c5 mt-10 text-center"></span>
+                            <div id="editarperfil-deletar" class="d-none center mt-10" onclick="">
+                                <img src='imagens/svg/cancel-cinza.svg' class="mr-10"/><span class='c4 fs-06 lh-24'>Eliminar arquivo</span>
+                            </div>
+                            <div id="editarperfil-barra" class="d-none upload-barra mt-10">
+                                <div id="editarperfil-progresso" class="upload-progresso"></div>
+                            </div>
+                        </div>
+                        <div id="editardados-atual" class="bt mt-20 pt-10">
+                            <span>Dados pessoais</span>
+                            <div id="editardados-btn" class="f-right">
+                                <img src="imagens/svg/feather-edit.svg">
+                                <span class="c5 fs-08">Editar</span>
+                            </div>
+                            <div id="nome" class="c5 fs-08"></div>
+                            <div id="perfillocal" class="d-none">
+                                <span id="perfillocal-texto" class="c5 fs-08"></span>
+                            </div>
+                            <div id="perfilprofissao" class="d-none">
+                                <span id="perfilprofissao-texto" class="c5 fs-08"></span>
+                            </div>
+                            <div id="perfilempresa" class="d-none">
+                                <span id="perfilempresa-texto" class="c5 fs-08"></span>
+                            </div>
+                        </div>
+                        <div id="editardados-editar" class="bt mt-20 pt-10 d-none">                
+                            <span>Editar dados pessoais</span>
+                            <div id="cancelardados-btn" class="f-right">
+                                <img src="imagens/svg/cancel2.svg">
+                                <span class="c5 fs-08">Cancelar</span>
+                            </div>
+                            <form id="editardados-form">
+                                <input type="text" id="editarnome" name="nome" class="ipt w-100" placeholder="Nome"/>
+                                <select class="ipt w-100" name="estado" id="estado">
+                                    <option value="" disabled selected>Estado</option>
+                                </select>
+                                <select class="ipt w-100" name="cidade" id="cidade">
+                                    <option value="" disabled selected>Cidade</option>
+                                </select>
+                                <input type="text" id="editarprofissao-texto" name="profissao" class="ipt w-100" placeholder="Profissão"/>
+                                <input type="text" id="editarcargo-texto" name="cargo" class="ipt w-100" placeholder="Cargo"/>
+                                <input type="text" id="editarempresa-texto" name="empresa" class="ipt w-100" placeholder="Empresa"/>
+                            </form>
+                            <div id="salvardados-btn" class="btn mb-0 Mt-10 w-100"><img src="imagens/svg/awesome-save.svg"/><span class="ml-10">Salvar</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/acao.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>loadeditar();</script>
+    <input type="hidden" id="player-bar" value="X"/>
+    <input type="hidden" id="player-arquivo"/>
+    </body>
+</html>

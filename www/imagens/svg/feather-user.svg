@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.9" height="18.887" viewBox="0 0 16.9 18.887">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #999;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(-5.5 -4)">
+    <path id="Caminho_38" data-name="Caminho 38" class="cls-1" d="M21.9,28.462V26.475A3.975,3.975,0,0,0,17.925,22.5H9.975A3.975,3.975,0,0,0,6,26.475v1.987" transform="translate(0 -6.075)"/>
+    <path id="Caminho_39" data-name="Caminho 39" class="cls-1" d="M19.95,8.475A3.975,3.975,0,1,1,15.975,4.5,3.975,3.975,0,0,1,19.95,8.475Z" transform="translate(-2.025)"/>
+  </g>
+</svg>

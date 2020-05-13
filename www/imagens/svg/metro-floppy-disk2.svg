@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #575ea7;
+        stroke: 0;
+      }
+    </style>
+  </defs>
+  <path id="Icon_metro-floppy-disk" data-name="Icon metro-floppy-disk" class="cls-1" d="M17.446,1.928H2.571v17h17V4.053ZM11.071,4.053H13.2V8.3H11.071ZM17.446,16.8H4.7V4.053H5.758V9.366h9.562V4.053h1.245l.88.88Z" transform="translate(-2.071 -1.428)"/>
+</svg>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg2">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnv" class="menu-btnv">
+                    <img src="imagens/svg/awesome-chevron-circle-left.svg"/>
+                </div>
+            </div>
+            <div class="logocab">
+                <div id="seguidorestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-user.svg"/>
+                </div>
+                <div id="mensagenstopo" class="icon-menu">
+                    <img src="imagens/svg/feather-message-circle.svg"/>
+                </div>
+                <div id="notificacoestopo" class="icon-menu">
+                    <img src="imagens/svg/ionic-ios-notifications.svg"/>
+                </div>
+                <div id="destaquestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-star.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Oportunidade</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+        
+        <div id="container">
+            <div id="oportunidade" class="maininicio2 flex-column pb-10">
+                <div class="card">
+                    <div id="oportunidade-list" class="bb">
+                        <div  id="fotoperfil" class="center mxw-40p brs-50">
+                            <img id="fotoperfil-img" src="imagens/svg/avatar-branco.svg" class="brs-50" height="auto" width="100%">
+                        </div>
+                        <div id="titulo" class="mt-10 text-center"></div>
+                        <div id="nome" class="mb-10 text-center fs-08 c5"></div>
+                        <div id="barra" class="mb-10 text-center fs-08 c5"></div>
+                    </div>
+                    <div id="problema" class="mt-10">
+                        <div>Descrição do Problema</div>
+                        <span id="problema-texto" class="c5 fs-08"></span>
+                    </div>
+                </div>
+                <div id="solucoes-list" class="card d-none"></div>
+                <div id="ajudar" class="card d-none">
+                    <div>Interessados em Investir</div>
+                    <div id="ajudar-list"></div>
+                </div>
+            </div>          
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/acao.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>loadoportunidade();</script>
+    <input type="hidden" id="player-bar" value="X"/>
+    <input type="hidden" id="player-arquivo"/>
+    </body>
+</html>

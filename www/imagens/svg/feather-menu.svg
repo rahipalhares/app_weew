@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #999;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-4 -8.5)">
+    <path id="Caminho_5" data-name="Caminho 5" class="cls-1" d="M4.5,18h18" transform="translate(0 -3)"/>
+    <path id="Caminho_6" data-name="Caminho 6" class="cls-1" d="M4.5,9h18"/>
+    <path id="Caminho_7" data-name="Caminho 7" class="cls-1" d="M4.5,27h18" transform="translate(0 -6)"/>
+  </g>
+</svg>

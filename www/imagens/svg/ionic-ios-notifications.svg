@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.89" height="18.333" viewBox="0 0 14.89 18.333">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #999;
+      }
+    </style>
+  </defs>
+  <g id="Icon_ionic-ios-notifications" data-name="Icon ionic-ios-notifications" transform="translate(-6.245 -3.43)">
+    <path id="Caminho_8" data-name="Caminho 8" class="cls-1" d="M16.692,30.632a2.042,2.042,0,0,0,2.084-2.3H14.6A2.043,2.043,0,0,0,16.692,30.632Z" transform="translate(-3.011 -9.368)"/>
+    <path id="Caminho_9" data-name="Caminho 9" class="cls-1" d="M20.444,16.767c-.667-.879-1.98-1.395-1.98-5.333,0-4.042-1.785-5.667-3.448-6.056-.156-.039-.269-.091-.269-.256V5a1.057,1.057,0,1,0-2.114,0v.126c0,.16-.113.217-.269.256-1.668.394-3.448,2.014-3.448,6.056,0,3.938-1.313,4.449-1.98,5.333a.86.86,0,0,0,.689,1.378H19.759A.86.86,0,0,0,20.444,16.767Z"/>
+  </g>
+</svg>

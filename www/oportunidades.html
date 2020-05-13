@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg2">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnb" class="menu-btn">
+                    <img src="imagens/svg/feather-menu.svg"/>
+                </div>
+            </div>
+            <div class="logocab">
+                <div id="seguidorestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-user.svg"/>
+                </div>
+                <div id="mensagenstopo" class="icon-menu">
+                    <img src="imagens/svg/feather-message-circle.svg"/>
+                </div>
+                <div id="notificacoestopo" class="icon-menu">
+                    <img src="imagens/svg/ionic-ios-notifications.svg"/>
+                </div>
+                <div id="destaquestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-star.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Oportunidades</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+        
+        <div class="site-overlay"></div>
+        <div class="site2-overlay"></div>
+        <nav class="pushy pushy-left">
+            <!-- Aba esquerda -->
+            <ul>
+                <li id="menuinicio" class="pushy-link c5">
+                    <img src="imagens/svg/ionic-md-home.svg"/><span>Home</span>
+                </li>
+                <li id="menuperfil" class="pushy-link c5">
+                    <img src="imagens/svg/awesome-user-alt.svg"/><span>Meu Perfil</span>
+                </li>
+                <li id="menuseguidores" class="pushy-link c5">
+                    <img src="imagens/svg/feather-users.svg"/><span>Conexões</span>
+                </li>
+                <li id="menumensagens" class="pushy-link c5">
+                    <img src="imagens/svg/awesome-envelope.svg"/><span>Mensagens</span>
+                </li>
+                <li id="menusalvos" class="pushy-link c5">
+                    <img src="imagens/svg/metro-floppy-disk.svg"/><span>Itens Salvos</span>
+                </li>
+                <li id="menuforuns" class="pushy-link c5">
+                    <img src="imagens/svg/awesome-comments.svg"/><span>Fóruns de Discussão</span>
+                </li>
+                <li id="menueventos" class="pushy-link c5">
+                    <img src="imagens/svg/awesome-list-ul.svg"/><span>Eventos / Campanhas</span>
+                </li>
+                <li id="menupodcasts" class="pushy-link c5">
+                    <img src="imagens/svg/simple-podcasts.svg"/><span>Podcasts</span>
+                </li>
+                <br>
+                <li>
+                    <button id="menuprofissional" class="btn btn-profissional">
+                        <img src="imagens/svg/awesome-unlock-alt.svg"/>
+                        <span>Profissional</span>
+                    </button>
+                </li>
+                <li id="menusair" class="pushy-link c5 li-sair">
+                    <img src="imagens/svg/open-account-logout.svg"/><span>Sair</span>
+                </li>
+            </ul>
+        </nav>       
+        <script src="js/pushy.min.js"></script>
+        <div class="site2-overlay"></div>  
+        <nav class="pushy2 pushy2-right">
+        </nav>
+        <script src="js/pushy2.min.js"></script>
+        <div id="container">
+            <div id="oportunidades" class="maininicio2 flex-column pb-10">
+                <div class="pesquisa-corpo card">
+                    <div class="p-rel">
+                        <input class="ipt pesquisa-corpo-campo" type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar por oportunidades"/>
+                        <button id="oportunidades-pesquisa" class="pesquisa-corpo-btnpesquisa"><img src="imagens/svg/feather-search.svg"/></button>
+                    </div>
+                    <button id="oportunidades-novo" class="btnpro mb-0 Mt-10 w-100 pesquisa-corpo-btnnovo"><img src="imagens/svg/ionic-ios-add-circle-outline.svg"/><span class="ml-10">Nova Oportunidade</span></button>
+                </div>
+                <div class="card">
+                    <div id="oportunidades-list"></div>
+                </div>
+            </div>          
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/acao.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>loadoportunidades();</script>
+    <input type="hidden" id="player-bar" value="X"/>
+    <input type="hidden" id="player-arquivo"/>
+    </body>
+</html>

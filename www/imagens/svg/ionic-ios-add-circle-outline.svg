@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Icon_ionic-ios-add-circle-outline" data-name="Icon ionic-ios-add-circle-outline" transform="translate(-3.375 -3.375)">
+    <path id="Caminho_24" data-name="Caminho 24" class="cls-1" d="M18.089,13.992H15.223V11.127a.615.615,0,1,0-1.231,0v2.865H11.127a.589.589,0,0,0-.615.615.6.6,0,0,0,.615.615h2.865v2.865a.6.6,0,0,0,.615.615.612.612,0,0,0,.615-.615V15.223h2.865a.615.615,0,1,0,0-1.231Z" transform="translate(-3.233 -3.233)"/>
+    <path id="Caminho_25" data-name="Caminho 25" class="cls-1" d="M11.375,4.452a6.92,6.92,0,1,1-4.9,2.027,6.877,6.877,0,0,1,4.9-2.027m0-1.077a8,8,0,1,0,8,8,8,8,0,0,0-8-8Z"/>
+  </g>
+</svg>

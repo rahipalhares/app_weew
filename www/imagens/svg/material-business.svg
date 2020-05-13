@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.583" height="12.225" viewBox="0 0 13.583 12.225">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-business" data-name="Icon material-business" class="cls-1" d="M9.792,7.217V4.5H3V16.725H16.583V7.217Zm-4.075,8.15H4.358V14.008H5.717Zm0-2.717H4.358V11.292H5.717Zm0-2.717H4.358V8.575H5.717Zm0-2.717H4.358V5.858H5.717Zm2.717,8.15H7.075V14.008H8.433Zm0-2.717H7.075V11.292H8.433Zm0-2.717H7.075V8.575H8.433Zm0-2.717H7.075V5.858H8.433Zm6.792,8.15H9.792V14.008H11.15V12.65H9.792V11.292H11.15V9.933H9.792V8.575h5.433ZM13.867,9.933H12.508v1.358h1.358Zm0,2.717H12.508v1.358h1.358Z" transform="translate(-3 -4.5)"/>
+</svg>

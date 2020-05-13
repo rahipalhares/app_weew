@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnv" class="menu-btnv">
+                    <img src="imagens/svg/awesome-chevron-circle-left.svg"/>
+                </div>
+            </div>
+            <div class="logocab">
+                <div id="seguidorestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-user.svg"/>
+                </div>
+                <div id="mensagenstopo" class="icon-menu">
+                    <img src="imagens/svg/feather-message-circle.svg"/>
+                </div>
+                <div id="notificacoestopo" class="icon-menu">
+                    <img src="imagens/svg/ionic-ios-notifications.svg"/>
+                </div>
+                <div id="destaquestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-star.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Fóruns de Discussão</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+
+        <div id="container">
+            <div id="forum" class="maininicio2 flex-column pb-10">
+                <div class="card">
+                    <div id="forum-list"></div>
+                    <div id="comentarios-list" class="mt-10 pt-10 bt"></div>
+                    <input type="hidden" id="idultima"/>
+                    <div class="comentario-enviar mt-10">
+                        <div id="upload" class="text-center d-none">
+                            <form id="novocomentario-form">
+                            <input type="text" class="d-none ipt w-100 Mb-10 Mt-10" maxlength="30" name="titulo" id="titulo" placeholder="Título do arquivo"/>
+                            <div id="novocomentario-uploads" class="d-flex flex-h mt-10">                       
+                                <div class="upload-btn-wrapper">
+                                    <div class="textcenter c3 br"><img class="mr-10" src="imagens/svg/awesome-image.svg"/>Foto</div>
+                                    <input type="file" id="novocomentario-foto" name="foto" accept="image/*"/>
+                                </div>
+                                <div class="upload-btn-wrapper">
+                                    <div class="textcenter c3 br"><img class="mr-10" src="imagens/svg/ionic-md-document.svg"/>PDF</div>
+                                    <input type="file" id="novocomentario-pdf" name="pdf" accept=".pdf"/>
+                                </div>
+                                <div class="upload-btn-wrapper">
+                                    <div class="textcenter c3"><img class="mr-10" src="imagens/svg/ionic-ios-videocam.svg"/>Vídeo</div>
+                                    <input type="file" id="novocomentario-video" name="video" accept=".mp4"/>
+                                </div>
+                                <div id="comentario-anexo-cancelar" class="w-20px">
+                                    <img src="imagens/svg/cancel-cinza.svg" class="mr-10">
+                                </div>
+                            </div>
+                            <span id="novocomentario-arquivo" class="d-none c5 mt-10 text-center"></span>
+                            <div id="novocomentario-deletar" class="d-none center mt-10" onclick="">
+                            <img src='imagens/svg/cancel-cinza.svg' class="mr-10"/><span class='c4 fs-06 lh-24'>Eliminar arquivo</span>
+                            </div>
+                            <div id="novocomentario-barra" class="d-none upload-barra mt-10"><div id="novocomentario-progresso" class="upload-progresso"></div></div>
+                            <input type="hidden" id="arquivo" name="arquivo"/>
+                            <div id="novocomentario-btn" class="d-none btn mb-0 Mt-10 w-100">Enviar</div>
+                            </form>
+                        </div>
+                        <div id="texto">
+                            <input class="ipt Pr-70" type="text" name="mensagem" id="mensagem" placeholder="Escrever um comentário" maxlength="1000">
+                            <button class="anexo" id="comentario-anexo"><img src="imagens/svg/attach.svg"></button>
+                            <button id="comentario-enviar"><img src="imagens/svg/feather-send.svg"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/acao.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>loadforum();loadcomentario();</script>
+    <input type="hidden" id="player-bar" value="X"/>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnv" class="menu-btnv">
+                    <img src="imagens/svg/awesome-chevron-circle-left.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Cadastro</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+        
+        <div id="container">
+            <div id="cadastro" class="maininicio2 flex-column pb-10">
+            <form id="cadastro-form">
+                <div class="card">
+                    <input type="text" id="nome" name="nome" class="ipt w-100" placeholder="Nome de exibição" maxlength="50" />
+                    <input type="text" id="celular" name="celular" class="ipt w-100" placeholder="Número de celular" maxlength="15" />
+                    <input type="text" id="email" name="email" class="ipt w-100" placeholder="Endereço de email" maxlength="80" />
+                    <input type="text" id="cep" name="cep" class="ipt w-100" placeholder="CEP" maxlength="8" />
+                    <input type="text" id="pais" name="pais" class="ipt w-100" placeholder="Sigla do País de Origem" maxlength="2" />
+                    <select class="ipt w-100" name="estado" id="estado">
+                        <option value="" disabled selected>Estado</option>
+                    </select>
+                    <select class="ipt w-100" name="cidade" id="cidade">
+                        <option value="" disabled selected>Cidade</option>
+                    </select>
+                    <input type="password" id="senha" name="senha" class="ipt w-100" placeholder="Senha" maxlength="12" />
+                    <input type="password" id="senha1" name="senha1" class="ipt w-100" placeholder="Repita sua senha" maxlength="12" />
+                    <div id="cadastro-btn" class="btn mb-0 Mt-10 w-100"><img src="imagens/svg/ionic-ios-add-circle-outline.svg"/><span class="ml-10">Cadastrar</span></div>
+                    <div id="aguarde" class="btn mb-0 Mt-10 w-100" style="display:none">Aguarde ...</div>
+                </div>
+            </form>
+            </div>          
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/login.js"></script> 
+    <script type="text/javascript" src="js/acao.js"></script>   
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <input type="hidden" id="player-bar" value="X"/>
+    </body>
+</html>

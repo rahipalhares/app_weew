@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ccc;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" class="cls-1" d="M8.5,9.563A4.781,4.781,0,1,0,3.719,4.781,4.782,4.782,0,0,0,8.5,9.563Zm4.25,1.063H10.921a5.78,5.78,0,0,1-4.841,0H4.25A4.25,4.25,0,0,0,0,14.875v.531A1.594,1.594,0,0,0,1.594,17H15.406A1.594,1.594,0,0,0,17,15.406v-.531A4.25,4.25,0,0,0,12.75,10.625Z" transform="translate(0.5 0.5)"/>
+</svg>

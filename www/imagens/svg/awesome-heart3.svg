@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.502" height="13.904" viewBox="0 0 15.502 13.904">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#grad);
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="40%">
+      <stop offset="0%" style="stop-color:#da59cb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#575ea7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path id="Icon_awesome-heart" data-name="Icon awesome-heart" class="cls-1" d="M13.092,3.115A3.873,3.873,0,0,0,7.808,3.5l-.558.575L6.692,3.5a3.873,3.873,0,0,0-5.285-.385A4.067,4.067,0,0,0,1.127,9l5.48,5.659a.888.888,0,0,0,1.283,0L13.37,9a4.064,4.064,0,0,0-.278-5.888Z" transform="translate(0.502 -1.532)"/>
+</svg>

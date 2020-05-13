@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.085" height="18.199" viewBox="0 0 19.085 18.199">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ccc;
+      }
+    </style>
+  </defs>
+  <path id="Icon_feather-star" data-name="Icon feather-star" class="cls-1" d="M12.042,3l2.794,5.661,6.248.913-4.521,4.4L17.631,20.2,12.042,17.26,6.454,20.2l1.067-6.221L3,9.574l6.248-.913Z" transform="translate(-2.5 -2.5)"/>
+</svg>

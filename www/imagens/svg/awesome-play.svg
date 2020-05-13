@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.475" height="20.475" viewBox="0 0 18 20.475">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-play" data-name="Icon awesome-play" class="cls-1" d="M16.1,8.148,2.747.251A1.811,1.811,0,0,0,0,1.819v15.79a1.82,1.82,0,0,0,2.747,1.567L16.1,11.283A1.82,1.82,0,0,0,16.1,8.148Z" transform="translate(0.5 0.521)"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.001" height="15.708" viewBox="0 0 15.001 15.708">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ccc;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-chat" data-name="Icon material-chat" class="cls-1" d="M15.6,3H4.4A1.4,1.4,0,0,0,3.007,4.4L3,17l2.8-2.8h9.8A1.4,1.4,0,0,0,17,12.8V4.4A1.4,1.4,0,0,0,15.6,3ZM5.8,7.9h8.4V9.3H5.8Zm5.6,3.5H5.8V10h5.6Zm2.8-4.2H5.8V5.8h8.4Z" transform="translate(-2.499 -2.5)"/>
+</svg>

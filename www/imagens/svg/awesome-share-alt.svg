@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.875" height="9" viewBox="0 0 7.875 9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-share-alt" data-name="Icon awesome-share-alt" class="cls-1" d="M6.188,5.625a1.68,1.68,0,0,0-1.051.367l-1.8-1.126a1.7,1.7,0,0,0,0-.733l1.8-1.126a1.684,1.684,0,1,0-.6-.954L2.738,3.18a1.687,1.687,0,1,0,0,2.64l1.8,1.126A1.688,1.688,0,1,0,6.188,5.625Z"/>
+</svg>

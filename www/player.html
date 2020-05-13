@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">
+    </head>
+    <body class="bg">
+    <div id="bodyA">
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+        
+        <div id="player" class="player d-flex flex-h p-10">
+            <audio id="player-audio" src="podcasts/player.mp3" preload="auto"></audio>
+            <button id="play">
+                <img src="imagens/svg/awesome-play.svg"/>
+            </button>
+            <button id="pause" class="d-none">
+                <img src="imagens/svg/pause.svg"/>
+            </button>
+            <div class="progressoc p-10">
+                <div class="progresso b-white brs-20px">
+                    <div id="player-carregado" class="b6 brs-20px" style="width:0%"></div>
+                    <div id="player-progresso" class="b4 brs-20px bar" style="width:0%"></div>
+                </div>
+            </div>
+            <button id="fechar">
+                <img src="imagens/svg/cancel.svg"/>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>carregadoaudio();</script>
+    <input type="hidden" id="player-bar" value="0"/>
+    </body>
+</html>

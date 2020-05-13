@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="4" viewBox="0 0 14 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #ccc;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_56" data-name="Grupo 56" transform="translate(-268 -519)">
+    <g id="Elipse_5" data-name="Elipse 5" class="cls-1" transform="translate(268 519)">
+      <circle class="cls-2" cx="2" cy="2" r="2"/>
+      <circle class="cls-3" cx="2" cy="2" r="1.5"/>
+    </g>
+    <g id="Elipse_6" data-name="Elipse 6" class="cls-1" transform="translate(273 519)">
+      <circle class="cls-2" cx="2" cy="2" r="2"/>
+      <circle class="cls-3" cx="2" cy="2" r="1.5"/>
+    </g>
+    <g id="Elipse_7" data-name="Elipse 7" class="cls-1" transform="translate(278 519)">
+      <circle class="cls-2" cx="2" cy="2" r="2"/>
+      <circle class="cls-3" cx="2" cy="2" r="1.5"/>
+    </g>
+  </g>
+</svg>

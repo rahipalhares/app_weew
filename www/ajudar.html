@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeEW</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/demo2.css">
+        <link rel="stylesheet" href="css/pushy2.css">      
+    </head>
+    <body class="bg2">
+    <div id="bodyA">
+        <header class="site-header">
+            <div class="voltarbtn">
+                <div id="btnv" class="menu-btnv">
+                    <img src="imagens/svg/awesome-chevron-circle-left.svg"/>
+                </div>
+            </div>
+            <div class="logocab">
+                <div id="seguidorestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-user.svg"/>
+                </div>
+                <div id="mensagenstopo" class="icon-menu">
+                    <img src="imagens/svg/feather-message-circle.svg"/>
+                </div>
+                <div id="notificacoestopo" class="icon-menu">
+                    <img src="imagens/svg/ionic-ios-notifications.svg"/>
+                </div>
+                <div id="destaquestopo" class="icon-menu">
+                    <img src="imagens/svg/feather-star.svg"/>
+                </div>
+            </div>
+            <div id="nomepagina" class="logobtn">Oportunidade</div>
+        </header>
+        
+        <!-- Aplicativo desenvolvido por Rahí Palhares -->
+        
+        <div id="container">
+            <div id="ajudar" class="maininicio2 flex-column pb-10">
+                <div id="escolher" class="card">
+                    <div class="bb pb-10">
+                        <div>Como você se encaixa nesta oportunidade?</div>
+                        <span class="c5 fs-08"></span>
+                    </div>
+                    <div class="bb pt-10 pb-10">
+                        <div>O que é ajudar com tecnologia?</div>
+                        <span class="c5 fs-08"></span>
+                        <div class="fs-06 p-2-10 brs-20px b mt-10 text-center c3 escolherbtn" id="escolher-tecnologia"><img src="imagens/svg/awesome-burn.svg" class="mr-10"/>Tecnologia</div>
+                        <input type="hidden" value="0" id="escolher-tecnologia-val" name="tecnologia" />
+                    </div>
+                    <div class="bb pt-10 pb-10">
+                        <div>O que é ajudar com dinheiro?</div>
+                        <span class="c5 fs-08"></span>
+                        <div class="fs-06 p-2-10 brs-20px b mt-10 text-center c3 escolherbtn" id="escolher-dinheiro"><img src="imagens/svg/awesome-money-bill-alt.svg" class="mr-10"/>Dinheiro</div>
+                        <input type="hidden" value="0" id="escolher-dinheiro-val" name="dinheiro" />
+                    </div>
+                    <button id="oportunidade-escolher" class="btnpro mb-0 Mt-10 w-100 pesquisa-corpo-btnnovo d-none"><img src="imagens/svg/material-navigate-next.svg"/><span class="ml-10">Avançar</span></button>
+                </div>
+                <div id="tecnologia" class="card d-none">
+                    <div>Tem uma ideia ou solução tecnológica?</div>
+                    <input type="text" id="prazo" name="prazo" class="ipt w-100" placeholder="Estimativa de prazo" />
+                    <textarea class="ipt w-100 mnh-40" rows="6" maxlength="50000" name="descricao" id="descricao" placeholder="Descrição da solução"></textarea>
+                    <button id="tecnologia-escolher" class="btnpro mb-0 Mt-10 w-100 pesquisa-corpo-btnnovo"><img src="imagens/svg/awesome-save.svg"/><span class="ml-10">Salvar</span></button>
+                </div>
+                <div id="dinheiro" class="card d-none">
+                    <div>Quanto você tem interesse em investir?</div>
+                    <input type="number" id="valor" name="valor" class="ipt w-100" placeholder="Valor de investimento" />
+                    <button id="dinheiro-escolher" class="btnpro mb-0 Mt-10 w-100 pesquisa-corpo-btnnovo"><img src="imagens/svg/awesome-save.svg"/><span class="ml-10">Salvar</span></button>
+                </div>
+            </div>          
+        </div>
+    </div>
+    <div id="bodyB" style="display:none;">
+        <center><span>SEM CONEXÃO COM A INTERNET</span></center>
+    </div>
+    <div id='modal' class='modal-'></div>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/acao.js"></script>
+    <script type="text/javascript" src="js/conteudo.js"></script>
+    <script type="text/javascript" src="js/navegacao.js"></script>
+    <script>loadajudar();</script>
+    <input type="hidden" id="player-bar" value="X"/>
+    <input type="hidden" id="player-arquivo"/>
+    </body>
+</html>

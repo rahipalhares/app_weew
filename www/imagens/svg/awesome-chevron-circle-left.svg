@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #999;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-chevron-circle-left" data-name="Icon awesome-chevron-circle-left" class="cls-1" d="M11.563,22.563a11,11,0,1,1,11-11A11,11,0,0,1,11.563,22.563ZM6.51,12.317l6.01,6.01a1.06,1.06,0,0,0,1.5,0l.754-.754a1.06,1.06,0,0,0,0-1.5l-4.506-4.506,4.506-4.506a1.06,1.06,0,0,0,0-1.5L14.024,4.8a1.06,1.06,0,0,0-1.5,0l-6.01,6.01A1.065,1.065,0,0,0,6.51,12.317Z" transform="translate(-0.063 -0.063)"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="18.6" viewBox="0 0 23 18.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ccc;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-project-diagram" data-name="Icon awesome-project-diagram" class="cls-1" d="M13.2,11H8.8a1.1,1.1,0,0,0-1.1,1.1v4.4a1.1,1.1,0,0,0,1.1,1.1h4.4a1.1,1.1,0,0,0,1.1-1.1V12.1A1.1,1.1,0,0,0,13.2,11ZM6.6,1.1A1.1,1.1,0,0,0,5.5,0H1.1A1.1,1.1,0,0,0,0,1.1V5.5A1.1,1.1,0,0,0,1.1,6.6H4.39L6.905,11A2.193,2.193,0,0,1,8.8,9.9h.01L6.6,6.033V4.4h7.7V2.2H6.6ZM20.9,0H16.5a1.1,1.1,0,0,0-1.1,1.1V5.5a1.1,1.1,0,0,0,1.1,1.1h4.4A1.1,1.1,0,0,0,22,5.5V1.1A1.1,1.1,0,0,0,20.9,0Z" transform="translate(0.5 0.5)"/>
+</svg>
