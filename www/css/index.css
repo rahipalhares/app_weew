@@ -22,7 +22,9 @@ select {
   background-repeat: no-repeat !important;
 }
 
-
+li {
+    list-style-type: none;
+}
 
 /* Recommended for Windows 8 Phone */
 /* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
