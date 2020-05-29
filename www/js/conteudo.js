@@ -1,6 +1,6 @@
 /* Configuração com servidor */
 var $server;
-$server = 'http://srv252.teste.website/~weew/';
+$server = 'https://weewbr.com/';
 
 /* Pegar conteúdo da url */
 function getURLParameters( param, url ) {

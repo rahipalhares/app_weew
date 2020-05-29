@@ -1,6 +1,6 @@
 /* Configuração com servidor */
 var $server;
-$server = 'http://srv252.teste.website/~weew/';
+$server = 'https://weewbr.com/';
 
 function onBackKeyDown() {return false;}
 document.addEventListener("deviceready", onDeviceReady, false);

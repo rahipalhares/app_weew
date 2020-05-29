@@ -4,7 +4,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
 //require_once('_classes/upload.class.php');
 
-$serve = mysqli_connect('localhost', 'weew_app', 'Alvvo18BR', 'weew_app');
+$serve = mysqli_connect('weew_app.mysql.dbaas.com.br', 'weew_app', 'Alvvo18BR', 'weew_app');
 
 mysqli_query($serve,"SET NAMES 'utf8'");
 
@@ -18,7 +18,7 @@ mysqli_query($serve,'SET character_set_results=utf8');
 Status de clientes
 
 */
-$server = "http://srv252.teste.website/~weew/";
+$server = "https://weewbr.com/";
 $ID = $_COOKIE['login'];
 if(!$_COOKIE['login']){$ID2 = 1;}else{$ID2 = $_COOKIE['login'];}
 $PRO = $_COOKIE['pro'];

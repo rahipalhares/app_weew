@@ -18,7 +18,7 @@ mysqli_query($serve,'SET character_set_results=utf8');
 Status de clientes
 
 */
-$server = "http://srv252.teste.website/~weew/";
+$server = "https://weewbr.com/";
 
 /*error_reporting(E_ALL);
 ini_set("display_errors", 1);*/
