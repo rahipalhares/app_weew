@@ -1,7 +1,6 @@
-cordova-plugin-camera-preview Sample Cordova App
+app weew
 =======================
 
-This is a sample cordova application for <a href="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview">cordova-plugin-camera-preview</a>
 
 ## Install
 ```
